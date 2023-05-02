@@ -30,9 +30,11 @@
 		document.getElementById('date').innerHTML = DT; 
 	</script>
 	<h1 class="text-center" style="font-family: 'Pacifico', cursive;;">FAHRENHEIT TO CELSIUS</h1>
-	<center><form>
+	
+	
+		<form>
 		Enter the Fahrenheit: <input type="text" id="num1">
-		<input type="Submit" value="Convert" onclick="Compute()">
+		<button type="submit" onclick="Compute()" class="btn btn-succes">Convert</button>
 	</form>
 	<script type="text/javascript">
 		function Compute(){
@@ -40,11 +42,9 @@
 			let celsius = Num(temp - 32);
 			let product = Num(celsius * 5/9);
 			
-
 			window.alert("The Celsius is: " + product);
 		}
 	</script>
-    </center>
 <table class="container">
 	<tr>
 <th>Absolute zero is the lowest possible temperature where heat energy is absent in a substance.The Fahrenheit is -459.67.</th>
@@ -54,6 +54,5 @@
 <th>The temperature at which its vapor pressure is equal to the pressure of the gas above it. The Fahrenheit is 212.0</th>
  </tr>
 </table>
-
 </body>
 </html>
