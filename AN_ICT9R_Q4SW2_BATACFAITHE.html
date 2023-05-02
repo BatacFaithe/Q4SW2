@@ -29,16 +29,19 @@
 		const DT  =  new Date();//constant declaration for date object
 		document.getElementById('date').innerHTML = DT; 
 	</script>
-	<h1 class="text-center" style="font-family: cursive;">FAHRENHEIT TO CELSIUS</h1>
+	<h1 class="text-center" style="font-family: 'Pacifico', cursive;;">FAHRENHEIT TO CELSIUS</h1>
 	<center><form>
-		Enter the number: <input type="text" id="num1">
+		Enter the Fahrenheit: <input type="text" id="num1">
 		<input type="Submit" value="Convert" onclick="Compute()">
 	</form>
 	<script type="text/javascript">
 		function Compute(){
+		        let num1 = document.getElementById('num1').value;
+			let celsius = Num(temp - 32);
+			let product = Num(celsius * 5/9);
 			
 
-			;
+			window.alert("The Celsius is: " + product);
 		}
 	</script>
     </center>
